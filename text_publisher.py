@@ -21,9 +21,6 @@ def on_disconnect(client, userdata, rc):
     else:
         print('Expected Disconnect')
 
-# The default message callback.
-# (won’t be used if only publishing, but can still exist)
-
 
 def on_message(client, userdata, message):
     print('Received message: "' + str(message.payload) + '" on topic "' +
